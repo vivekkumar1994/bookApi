@@ -29,7 +29,7 @@ app.post('/api/addBooks', (req, res) => {
       });
   });
 
-  app.get('/api/allBooksById/:id', (req, res) => {
+  app.get('/api/getallBooks', (req, res) => {
     // Use the `find` method to retrieve all books and use a Promise
     book.find({})
       .then(books => {
