@@ -40,7 +40,7 @@ app.post('/api/addBooks', (req, res) => {
         res.status(500).json({ error: 'Failed to fetch books' });
       });
   });
-  app.get('/getAllBooks/:id', (req, res) => {
+  app.get('/api/getAllBooks/:id', (req, res) => {
     const bookId = req.params.id;
   
     // Use the `findById` method to retrieve a book by its unique ID
